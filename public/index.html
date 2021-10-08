@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+<body class="h-screen">
+    <div class="flex h-full">
+        <!-- nav menu -->
+        <div class="fixed lg:static bottom-0 w-full lg:w-24 lg:h-full z-10">
+            <div class="w-full lg:w-24 bg-indigo-800 h-full relative">
+                <a href="#" class="hidden absolute top-10 left-1/2 transform -translate-x-1/2 lg:flex lg:justify-center lg:items-center w-14 h-14 hover:bg-white hover:bg-opacity-50 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
+                      </svg>
+                </a>
+    
+                <div class="h-full flex lg:flex-col justify-center items-center space-x-2 lg:space-x-0 lg:space-y-4 py-2 lg:py-4">
+                    <a href="#" class="group">
+                        <div class="flex items-center justify-center w-10 h-10 lg:w-14 lg:h-14 rounded-xl bg-white opacity-100 transform -translate-y-8 lg:translate-y-0 lg:translate-x-8 text-red-500 shadow-xl duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                              </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="group">
+                        <div class="flex items-center justify-center w-10 h-10 lg:w-14 lg:h-14 text-white rounded-xl opacity-50 group-hover:bg-white group-hover:opacity-100 transform group-hover:-translate-y-8 lg:group-hover:translate-y-0 lg:group-hover:translate-x-8 group-hover:text-indigo-500 group-hover:shadow-xl duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+                              </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="group">
+                        <div class="flex items-center justify-center w-10 h-10 lg:w-14 lg:h-14 text-white rounded-xl opacity-50 group-hover:bg-white group-hover:opacity-100 transform group-hover:-translate-y-8 lg:group-hover:translate-y-0 lg:group-hover:translate-x-8 group-hover:text-indigo-500 group-hover:shadow-xl duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" />
+                              </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="group">
+                        <div class="flex items-center justify-center w-10 h-10 lg:w-14 lg:h-14 text-white rounded-xl opacity-50 group-hover:bg-white group-hover:opacity-100 transform group-hover:-translate-y-8 lg:group-hover:translate-y-0 lg:group-hover:translate-x-8 group-hover:text-indigo-500 group-hover:shadow-xl duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd" />
+                              </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full p-4 lg:p-10">
+            <div class="flex lg:space-x-10">
+                <div class="lg:w-1/2 hidden lg:block">
+                    <form action="#">
+                        <div class="relative">
+                            <div class="w-4 text-blue-800 absolute top-3 left-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                                  </svg>
+                            </div>
+                            <input type="text" name="search" id="search" class="w-full h-10 bg-indigo-50 pl-10 text-indigo-900 outline-none focus:ring-2 focus:ring-blue-600 rounded-md">
+                        </div>
+                    </form>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="flex justify-between">
+                        <div class="lg:hidden">
+                            <a href="#" class="flex justify-center items-center w-10 h-10 rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-800" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
+                                  </svg>
+                            </a>
+                        </div>
+                        <div class="hidden lg:flex items-center h-10 space-x-6 font-semibold">
+                            <a href="#" class="hover:text-blue-800 capitalize">Feedback</a>
+                            <a href="#" class="hover:text-blue-800 capitalize">contacts</a>
+                            <a href="#" class="hover:text-blue-800 capitalize">help</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="flex justify-center items-center text-gray-300 h-10 w-10 relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                                  </svg>
+                                  <div class="w-2 h-2 rounded-full bg-red-500 absolute top-2 right-2 border border-white"></div>
+                            </a>
+                            <div class="lg:relative">
+                                <button 
+                                id="dropdown"
+                                class="h-10 w-10 rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 focus:ring-offset-white">
+                                    <img src="./img/user.jpg" alt="" class="h-10 w-10 object-cover">
+                                </button>
+                                <div id="dropdownMenu" class="hidden absolute right-0 w-full lg:w-48 mt-2">
+                                    
+                                    <div class="mx-4 lg:mx-0 bg-white rounded-md shadow-lg py-1 ring-1 ring-opacity-5 ring-black mt-2">
+                                        <div class="lg:hidden p-3">
+                                            <form action="#">
+                                                <div class="relative">
+                                                    <div class="w-4 text-blue-800 absolute top-3 left-3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                                                          </svg>
+                                                    </div>
+                                                    <input type="text" name="search" id="search" class="w-full h-10 bg-indigo-50 pl-10 text-indigo-900 outline-none focus:ring-2 focus:ring-blue-600 rounded-md">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="lg:hidden border-b">
+                                            <a href="#" class="capitalize block px-4 py-2 text-gray-700 hover:bg-gray-100">Feedback</a>
+                                            <a href="#" class="capitalize block px-4 py-2 text-gray-700 hover:bg-gray-100">Contacts</a>
+                                            <a href="#" class="capitalize block px-4 py-2 text-gray-700 hover:bg-gray-100">Help</a>
+                                        </div>
+                                        <a href="#" class="capitalize block px-4 py-2 text-gray-700 hover:bg-gray-100">profile</a>
+                                        <a href="#" class="capitalize block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
+                                        <a href="#" class="capitalize block px-4 py-2 text-gray-700 hover:bg-gray-100">Sign Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-300 lg:hidden mt-4 rounded-xl p-2">
+                <button id="toggleMenu" class="block w-24 h-8 mx-auto capitalize bg-indigo-800">Toggle nav</button>
+            </div>
+
+            <div class="overflow-hidden">
+                <div id="mainAndSidebar" class="transform lg:transform-none -translate-x-0 transition-all duration-300">
+                    <div class="flex mt-4 lg:mt-10 lg:space-x-10">
+                        <div class="w-full flex-shrink-0 lg:flex-shrink lg:w-3/4 rounded-xl">
+                            <div class="flex space-x-4 lg:space-x-10">
+                                <div class="w-full h-32 bg-gray-300 rounded-xl"></div>
+                                <div class="w-full h-32 bg-gray-300 rounded-xl"></div>
+                                <div class="w-full h-32 bg-gray-300 rounded-xl"></div>
+                            </div>
+                            <div class="w-full h-32 bg-gray-300 rounded-xl mt-4 lg:mt-10"></div>
+        
+                            <div class="flex mt-4 lg:mt-10 space-x-4 lg:space-x-10">
+                                <div class="w-full bg-gray-300 h-32 rounded-xl"></div>
+                                <div class="w-full bg-gray-300 h-32 rounded-xl"></div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/4 flex-shrink-0 lg:flex-shrink h-56 bg-gray-300 rounded-xl">sidebar</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
